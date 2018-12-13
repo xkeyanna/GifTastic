@@ -11,6 +11,14 @@ function dogButtonClicked() {
     searchGif(userInput);
 }
 
+
+document.onkeyup = function(Event) {
+    if (event.key === "Enter") {
+        userInput();
+    }
+};
+
+
 function submitButtonClicked() {
     var userInput = $('#dog-input').val();
 
