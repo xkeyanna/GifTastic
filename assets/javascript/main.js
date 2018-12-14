@@ -11,10 +11,11 @@ function dogButtonClicked() {
     searchGif(userInput);
 }
 
+event.preventDefault();
 
-document.onkeyup = function(Event) {
+document.onkeydown = function(Event) {
     if (event.key === "Enter") {
-        userInput();
+        submitButtonClicked();
     }
 };
 
